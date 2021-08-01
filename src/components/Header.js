@@ -47,7 +47,7 @@ function Header() {
             style={{ height: 35, width: 35 }}
           />
           <SocialIcon
-            url="twitter.com/HolifieldOlal"
+            url="https://twitter.com/HolifieldOlal"
             className="mr-4"
             target="_blank"
             fgColor="#fffff"
