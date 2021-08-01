@@ -30,7 +30,7 @@ function Project() {
           Welcome to my projects page!
         </h2>
 
-        <section className="grid grid-cols-2 gap-8">
+        <section className="grid md:grid-flow-col gap-8 flex flex-wrap md:flex-wrap">
           {projectData &&
             projectData.map((project, index) => (
               <article className="relative rounded-lg shadow-xl bg-white p-16">
@@ -45,18 +45,20 @@ function Project() {
                   </a>
                 </h3>
                 <div className="text-gray-500 text-xs space-x-4 overflow-auto">
-                  <span>
-                    <strong className="font-bold">Finished on</strong>:{" "}
-                    {new Date(project.date).toLocaleDateString()}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Company</strong>:{" "}
-                    {project.place}
-                  </span>
-                  <span>
-                    <strong className="font-bold">Type</strong>:{" "}
-                    {project.projectType}
-                  </span>
+                  <div className=" flex flex-wrap">
+                    <span>
+                      <strong className="font-bold">Finished on</strong>:{" "}
+                      {new Date(project.date).toLocaleDateString()}
+                    </span>
+                    <span>
+                      <strong className="font-bold">Company</strong>:{" "}
+                      {project.place}
+                    </span>
+                    <span>
+                      <strong className="font-bold">Type</strong>:{" "}
+                      {project.projectType}
+                    </span>
+                  </div>
                 </div>
                 <p className="my-6 text-lg text-gray-700 leading-relaxed">
                   {project.description}
