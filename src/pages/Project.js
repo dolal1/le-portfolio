@@ -44,7 +44,7 @@ function Project() {
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-500 text-xs space-x-4">
+                <div className="text-gray-500 text-xs space-x-4 overflow-auto">
                   <span>
                     <strong className="font-bold">Finished on</strong>:{" "}
                     {new Date(project.date).toLocaleDateString()}
