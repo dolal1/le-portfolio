@@ -29,8 +29,6 @@ function About() {
     return <div>Loading...</div>;
   }
 
-  console.log(author);
-
   return (
     <main className="relative">
       <img src={grey} alt="grey background" className="absolute w-full" />
@@ -45,13 +43,13 @@ function About() {
             <h1 className="cursive text-6xl text-green-300 mb-4">
               Hey <span className="text-green-100">{author.name}</span> here
             </h1>
-            <p className="text-green-200 text-lg">
+            <div className="text-green-200 text-lg">
               <BlockContent
                 blocks={author.bio}
                 projectId="ph4hgpxb"
                 dataset="production"
               />
-            </p>
+            </div>
           </div>
         </section>
       </div>
